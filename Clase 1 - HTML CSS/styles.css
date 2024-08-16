@@ -39,6 +39,32 @@
 
 }
 
+& .tag {
+    background-color: green;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+& .tag-premium {
+    background-color: yellow;
+    width: fit-content;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+& .data {
+    font-size: 12px;
+    color: gray;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
 .ingresar {
     cursor: pointer;
 
@@ -96,20 +122,146 @@
     }
 }
 
-main {
+.main {
     padding: 20px 100px;
     display: flex;
     flex-direction: column;
 
+
     & .main-news {
         width: 60%;
         border: 1px solid gray;
-        height: 90vh;
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 30px;
+        gap: 10px;
+
+        & .title {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+        }
     }
 
     & .big-news {
-        width: 100%;
+        width: 356px;
         border: 1px solid gray;
-        height: 44vh;
+        min-height: 60vh;
+        cursor: pointer;
+        position: relative;
+
+        & img {
+            width: 100%;
+            height: 40vh;
+            object-fit: cover;
+        }
+
+        .content {
+            width: 100%;
+            padding: 15px;
+
+        }
+
+        & .title {
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+        }
+
+
+
+        &:hover .title {
+            color: green;
+
+        }
+
+        & .tag {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        &:hover {
+            box-shadow: 0px 4px 4px 2px #00000040;
+        }
     }
+
+    .no-image-news {
+        gap: 10px;
+        border: 1px solid gray;
+        min-height: 30vh;
+        padding: 15px;
+        cursor: pointer;
+
+        & .tag {
+            width: fit-content;
+        }
+
+        & .title {
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+        }
+
+        &:hover .title {
+            color: green;
+
+        }
+
+        &:hover {
+            box-shadow: 0px 4px 4px 2px #00000040;
+        }
+    }
+
+    & .small-news {
+        width: 23%;
+        border: 1px solid gray;
+        min-height: 60vh;
+        cursor: pointer;
+        position: relative;
+
+        & img {
+            width: 100%;
+            height: 40vh;
+            object-fit: cover;
+        }
+
+        .content {
+            width: 100%;
+            padding: 15px;
+            height: 300px;
+            justify-content: space-between;
+
+        }
+
+        & .title {
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+        }
+
+
+
+        &:hover .title {
+            color: green;
+
+        }
+
+        & .tag {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        &:hover {
+            box-shadow: 0px 4px 4px 2px #00000040;
+        }
+    }
+
 }

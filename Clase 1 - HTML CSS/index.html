@@ -5,15 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/48735aa16c.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
       <div class="header-top">
         <div class="row bold" style="font-size: 14px">
           <div>Santa Cruz de la Sierra</div>
-          <div>9 de agosto</div>
-          <div>14:47</div>
-          <div>17°</div>
+          <div class="row">
+            <i class="fa-regular fa-calendar" style="color: green"></i>
+            <div>9 de agosto</div>
+          </div>
+          <div class="row">
+            <i class="fa-regular fa-clock" style="color: green"></i>
+            <div>14:47</div>
+          </div>
+          <div class="row">
+            <i class="fa-solid fa-sun" style="color: green"></i>
+            <div>17°</div>
+          </div>
           <div style="font-weight: 300; cursor: pointer">Min 15° Max 17°</div>
         </div>
         <div
@@ -60,14 +73,120 @@
         <div class="option">E-PAPER</div>
       </div>
     </header>
-    <main>
-      <div class="row" style="justify-content: space-between; height: 90vh">
-        <div class="main-news"></div>
+    <div class="main">
+      <div
+        class="row"
+        style="justify-content: space-between; margin-bottom: 20px"
+      >
+        <div
+          class="main-news"
+          style="background-image: url('images/news.webp')"
+        >
+          <div class="data">JUAN CARLOS SALINAS | 3 HORAS</div>
+          <div class="title">
+            Cainco decide no asistir a la reunión de este viernes con el
+            gobierno
+          </div>
+          <div class="tag">ECONOMÍA</div>
+        </div>
         <div class="col" style="width: 35%; justify-content: space-between">
-          <div class="big-news"></div>
-          <div class="big-news special"></div>
+          <div class="big-news">
+            <div class="tag">PAÍS</div>
+            <img src="images/news.webp" />
+            <div class="content col" style="gap: 20px">
+              <div class="title">
+                Ministro Montenegro responde a la Cainco: El diálogo "es un
+                espacio que no debe ser desaprovechado en ningún momento
+              </div>
+              <div class="data">39 MINUTOS</div>
+            </div>
+          </div>
+          <div class="no-image-news col" style="justify-content: space-between">
+            <div class="col" style="gap: 10px">
+              <div class="tag">ECONOMÍA</div>
+              <div class="title">
+                Los bancos aseguran que el control de divisas generará
+                incertidumbre en el sistema financiero
+              </div>
+            </div>
+            <div class="data">Ernesto Estremadoiro Flores | 2 horas</div>
+          </div>
         </div>
       </div>
-    </main>
+      <div class="row" style="justify-content: left; margin-bottom: 20px">
+        <div class="big-news">
+          <div class="tag">PAÍS</div>
+          <img src="images/news.webp" />
+          <div class="content col" style="gap: 5px">
+            <div class="title">
+              Fundación Tierra denuncia que un nuevo decreto legaliza a los que
+              quemaron El Choré hace un año
+            </div>
+            <div class="tag-premium">EXCLUSIVO SUSCRIPTORES</div>
+            <div class="data">El Debes | 1 hora</div>
+          </div>
+        </div>
+        <div class="big-news">
+          <div class="tag">PAÍS</div>
+          <img src="images/news.webp" />
+          <div
+            class="content col"
+            style="gap: 5px; height: 150px; justify-content: space-between"
+          >
+            <div class="title">
+              12 municipios cruceños se declararon en desastre por incendios
+              forestales
+            </div>
+            <div class="data">21 MINUTOS</div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="small-news">
+          <div class="tag">PAÍS</div>
+          <img src="images/news.webp" />
+          <div class="content col">
+            <div class="title">
+              12 municipios cruceños se declararon en desastre por incendios
+              forestales
+            </div>
+            <div class="data">21 MINUTOS</div>
+          </div>
+        </div>
+        <div class="small-news">
+          <div class="tag">PAÍS</div>
+          <img src="images/news.webp" />
+          <div class="content col">
+            <div class="title">
+              12 municipios cruceños se declararon en desastre por incendios
+              forestales
+            </div>
+            <div class="data">21 MINUTOS</div>
+          </div>
+        </div>
+        <div class="small-news">
+          <div class="tag">PAÍS</div>
+          <img src="images/news.webp" />
+          <div class="content col">
+            <div class="title">
+              12 municipios cruceños se declararon en desastre por incendios
+              forestales
+            </div>
+            <div class="data">21 MINUTOS</div>
+          </div>
+        </div>
+        <div class="small-news">
+          <div class="tag">PAÍS</div>
+          <img src="images/news.webp" />
+          <div class="content col">
+            <div class="title">
+              La salud del bombero voluntario que sufrió quemaduras es estable y
+              será sometido a cirugías de limpieza de tejidos
+            </div>
+            <div class="data">21 MINUTOS</div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
