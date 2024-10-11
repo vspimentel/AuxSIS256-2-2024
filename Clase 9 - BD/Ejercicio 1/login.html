@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log In</title>
+    <style>
+      .row {
+        display: flex;
+      }
+
+      .col {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        padding: 10px;
+        margin: 0 auto;
+        width: min-content;
+        gap: 10px;
+      }
+
+      button {
+        width: 100px;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 5px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: black;
+          color: white;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <form class="container" action="autenticar.php" method="post">
+      <div class="row" style="gap: 10px">
+        <div class="col">
+          <label>Login</label>
+          <label>Contraseña</label>
+        </div>
+        <div class="col">
+          <input type="text" name="usuario" />
+          <input type="password" name="password" />
+        </div>
+      </div>
+      <button type="submit">Ingresar</button>
+    </form>
+  </body>
+</html>
