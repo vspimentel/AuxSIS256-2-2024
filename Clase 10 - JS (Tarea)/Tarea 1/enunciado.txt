@@ -3,3 +3,5 @@ Agregar los botones y las funciones de
 - Raíz de x
 - Logaritmo (base 10) 
 - Factorial
+
+Hasta el viernes 25/10
