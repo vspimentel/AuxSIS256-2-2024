@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        border-spacing: 0;
+
+        th {
+          background-color: rgb(1, 133, 189);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <table id="tabla" border="1">
+      <thead>
+        <tr>
+          <th>Nro</th>
+          <th>Apellidos nombres</th>
+          <th>Edad</th>
+          <th>Materia</th>
+          <th>Nota</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <button onclick="mostrarFormulario()">Agregar estudiante</button>
+    <form style="display: none">
+      <label>Nombres y apellidos</label>
+      <input type="text" id="nombres" />
+      <label>Edad</label>
+      <input type="number" id="edad" max="100" min="0" />
+      <label>Materia</label>
+      <select id="materia">
+        <option value="SIS256">SIS256</option>
+        <option value="SIS258">SIS258</option>
+        <option value="SIS260">SIS260</option>
+      </select>
+      <label>Nota</label>
+      <input type="number" id="nota" max="100" min="0" />
+      <button type="button" onclick="guardarEstudiante()">Guardar</button>
+    </form>
+  </body>
+  <script src="ejercicio1.js"></script>
+</html>

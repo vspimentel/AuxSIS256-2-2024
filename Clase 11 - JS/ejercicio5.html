@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #contenido {
+        margin: 100px auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .tablero {
+        width: 150px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+
+        & .celda {
+          width: 40px;
+          height: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 30px;
+          border: 1px solid black;
+          cursor: pointer;
+          font-weight: bold;
+        }
+      }
+
+      #mensaje {
+        padding: 10px 20px;
+        background-color: blue;
+        color: white;
+        width: fit-content;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="contenido">
+      <div class="tablero">
+        <div class="celda"></div>
+        <div class="celda"></div>
+        <div class="celda"></div>
+        <div class="celda"></div>
+        <div class="celda"></div>
+        <div class="celda"></div>
+        <div class="celda"></div>
+        <div class="celda"></div>
+        <div class="celda"></div>
+      </div>
+      <div id="mensaje">Turno X</div>
+    </div>
+  </body>
+  <script src="ejercicio5.js"></script>
+</html>
